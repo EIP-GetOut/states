@@ -54,12 +54,12 @@ class MyHomePage extends StatelessWidget {
 }
 
 class ThemeModel extends ChangeNotifier {
-  Color _color = Colors.blue;
+  Color _color = Colors.white;
 
   Color get color => _color;
 
   void toggleTheme() {
-    _color = Colors.redAccent;
+    _color = (_color == Colors.white) ? Colors.black : Colors.white;
     notifyListeners();
   }
 }

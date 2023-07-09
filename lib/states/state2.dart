@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
 class MyHomePage extends StatelessWidget {
   final Function() toggleThemeColor;
 
-  const MyHomePage({required key, required this.toggleThemeColor});
+  const MyHomePage({super.key, required this.toggleThemeColor});
 
   @override
   Widget build(BuildContext context) {

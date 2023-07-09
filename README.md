@@ -4,13 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+'States' or basics and not realy funny way to handle things it depends on statefull widget..
 
-A few resources to get you started if this is your first Flutter project:
+'Provider' give more features but in comparison to BLoC
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+'Flutter Bloc' is so powerfull with like a midleware
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Test Project
+
+- move file inside bloc/ or provider/ or states/ .
+- run it (for bloc/ run bloc.dart as entry point) .
+

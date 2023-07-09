@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:bloc/bloc.dart';
 
 /// {@template app_bloc_observer}
 /// Custom [BlocObserver] that observes all bloc and cubit state changes.

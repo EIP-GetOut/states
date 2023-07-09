@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:states/bloc_theme.dart';
-import 'package:states/bloc_observer.dart';
+import 'package:states/bloc/bloc_theme.dart';
+import 'package:states/bloc/bloc_observer.dart';
 
 void main() {
   Bloc.observer = const AppBlocObserver();
