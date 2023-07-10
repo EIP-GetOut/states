@@ -20,9 +20,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => ThemeBloc(),
-      child: const AppView(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => ThemeBloc()),
+      ],
+      child: const AppView()
     );
   }
 }
@@ -39,14 +41,18 @@ class AppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ThemeBloc, ThemeData>(
+    return Builder(builder: (context) {
+      final theme = context.watch<ThemeBloc>().state;
+      return MaterialApp(
+        theme: theme,
+        home: const CounterPage(),
+      );
+    });
+/*    return BlocBuilder<ThemeBloc, ThemeData>(
       builder: (_, theme) {
-        return MaterialApp(
-          theme: theme,
-          home: const CounterPage(),
-        );
+
       },
-    );
+    );*/
   }
 }
 
